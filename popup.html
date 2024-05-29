@@ -5,18 +5,20 @@
   <style>
     body { font-family: Arial, sans-serif; }
     #toggle { margin: 20px; padding: 10px 20px; }
-    .footer {
-      font-size: 8px;
-      text-align: center;
-      margin-top: 10px;
-    }
+    #dom-structure, #element-code { white-space: pre; margin: 20px; padding: 10px; border: 1px solid #ccc; }
+    #element-code { height: 200px; overflow: auto; }
+    .footer { font-size: small; text-align: center; margin-top: 10px; }
   </style>
 </head>
 <body>
   <button id="toggle">Enable</button>
+  <button id="show-structure">Show DOM Structure</button>
+  <pre id="dom-structure">Click "Show DOM Structure" to see the structure here.</pre>
+  <textarea id="element-code" readonly></textarea>
   <div class="footer">
     Made with ❤️ by <a href="https://github.com/harshanacz" target="_blank">harshanacz</a>
   </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
